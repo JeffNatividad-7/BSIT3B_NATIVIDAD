@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Mode</title>
+    <style>
+        body {
+            transition: background-color 0.5s, color 0.5s;
+            background-color: white;
+            color: black;
+        }
+        .night-mode {
+            background-color: black;
+            color: white;
+        }
+        button {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Night Mode</h1>
+<p>Jeffrey John S. Natividad</p>
+<button id="toggleButton">Click Here!</button>
+
+<script>
+    function toggleNightMode() {
+        document.body.classList.toggle('night-mode');
+    }
+
+    const button = document.getElementById('toggleButton');
+    button.addEventListener('click', toggleNightMode);
+</script>
+
+</body>
+</html>
